@@ -351,3 +351,5 @@ MigrationBackup/
 # Rust folder
 /target
 Cargo.lock
+C#调用rust动态链接库技术验证/Rust_ln_dll/target/.rustc_info.json
+C#调用rust动态链接库技术验证/Rust_ln_dll/target/CACHEDIR.TAG
