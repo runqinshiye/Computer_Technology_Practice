@@ -1,0 +1,12 @@
+[package]
+name = "ln_dll"
+version = "0.1.0"
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+[lib]
+name = "rustdll" #生成dll的文件名
+crate-type = ["cdylib"] #cdylib和dylib区别：dylib是rust ABI；cdylib是C ABI。dylib目前还不稳定！
