@@ -1,6 +1,28 @@
+开发环境安装：
+https://kaisery.gitbooks.io/trpl-zh-cn/content/
 https://www.cnblogs.com/leemano/p/14732540.html
-
-
 ======================================
 cargo build --release
 
+======================================
+
+Learn more about Rust:
+=======================================
+https://www.rust-lang.org/
+https://rust-lang.org/learn
+https://rust-lang.org/community
+https://Crates.io
+https://Tokio.rs 
+https://github.com/hyperium/hyper
+https://research.mozilla.org/rust
+***********************************************************
+Learn more about Buoyant + Linkerd:
+======================================
+https://buoyant.io
+https://linkerd.io
+https://github.com/linkerd/linkerd2
+https://Slack.linkerd.io - #linkerd2 channel
+
+书籍和视频：
+https://kaisery.gitbooks.io/trpl-zh-cn/content/
+https://www.youtube.com/playlist?list=PL3azK8C0kje1DUJbaOqce19j3R_-tIc4_
