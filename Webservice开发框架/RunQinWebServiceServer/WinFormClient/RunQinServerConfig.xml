@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ConnectionSettings>
+    <ServerConnection>
+        <URI>http://localhost:58289/ServiceMain.asmx</URI>
+        <User></User>
+        <UsingAutoLogin></UsingAutoLogin>
+        <UsingEcw></UsingEcw>
+    </ServerConnection>
+    <DatabaseType></DatabaseType>
+    <UseDynamicMode></UseDynamicMode>
+</ConnectionSettings>
