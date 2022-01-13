@@ -88,12 +88,6 @@ namespace RunQinBusiness.Remoting
     }
 
     ///<summary></summary>
-    public class DtoGetTableLow : DataTransferObject
-    {
-
-    }
-
-    ///<summary></summary>
     public class DtoGetSerializableDictionary : DataTransferObject
     {
     }

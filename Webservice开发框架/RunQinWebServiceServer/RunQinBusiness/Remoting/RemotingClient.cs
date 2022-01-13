@@ -204,21 +204,6 @@ namespace RunQinBusiness.Remoting
 
         ///<summary>Optionally set hasConnectionLost true to keep the calling thread here until a connection to the Middle Tier connection can be established
         ///in the event of a web connection failure. Set hasConnectionLost to false if a throw is desired when a connection cannot be made.</summary>
-        public static DataTable ProcessGetTableLow(DtoGetTableLow dto, bool hasConnectionLost = true)
-        {
-            string result = SendAndReceive(dto, hasConnectionLost);
-            try
-            {
-                return XmlConverter.XmlToTable(result);
-            }
-            catch (Exception ex)
-            {
-                throw ProcessExceptionDeserialize(result, ex);
-            }
-        }
-
-        ///<summary>Optionally set hasConnectionLost true to keep the calling thread here until a connection to the Middle Tier connection can be established
-        ///in the event of a web connection failure. Set hasConnectionLost to false if a throw is desired when a connection cannot be made.</summary>
         public static DataSet ProcessGetDS(DtoGetDS dto, bool hasConnectionLost = true)
         {
             string result = SendAndReceive(dto, hasConnectionLost);
