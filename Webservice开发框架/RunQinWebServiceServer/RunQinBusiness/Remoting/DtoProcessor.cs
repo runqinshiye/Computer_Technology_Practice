@@ -12,7 +12,7 @@ namespace RunQinBusiness.Remoting
 {
     public class DtoProcessor
     {
-
+        
         ///<summary>Used to indicate whether the middle tier process has initialized.</summary>
         private static bool _isMiddleTierInitialized = false;
 
@@ -58,6 +58,8 @@ namespace RunQinBusiness.Remoting
                 #endregion
                 DataTransferObject dto = DataTransferObject.Deserialize(dtoString);
                 DtoInformation dtoInformation = new DtoInformation(dto);
+                //Set Security.CurUser so that queries can be run against the db as if it were this user.
+                CheckUserAndPassword(dto.Credentials.Username, dto.Credentials.Password);
                 Type type = dto.GetType();
                 #region DtoGetTable
                 if (type == typeof(DtoGetTable))
@@ -154,6 +156,19 @@ namespace RunQinBusiness.Remoting
                 }
                 return exception.Serialize();
             }
+        }
+
+        //模拟入口验证
+        public static Credentials CheckUserAndPassword(string username, string plaintext)
+        {
+            Credentials ins = new Credentials();
+            ins.Username = username;
+            ins.Password = plaintext;
+            if (ins == null)
+            {
+                throw new ODException("Invalid username or password.", ODException.ErrorCodes.CheckUserAndPasswordFailed);
+            }
+            return ins;
         }
 
         public static void LoadDatabaseInfoFromFile(string configFilePath)
