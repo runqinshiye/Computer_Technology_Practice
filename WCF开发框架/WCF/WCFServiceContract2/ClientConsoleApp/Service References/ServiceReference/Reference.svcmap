@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="3d09da94-09fb-40f6-8a55-c6c4cd9d54f5" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:9003/instrumentationService/" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="CompleteInstrumentationService.wsdl" MetadataType="Wsdl" ID="fc95074a-23f8-4eee-a6ca-85429cf9609c" SourceId="1" SourceUrl="http://localhost:9003/instrumentationService/?wsdl" />
+    <MetadataFile FileName="item.disco" MetadataType="Disco" ID="457be3d7-aba3-4b18-9fe6-e208c03791f4" SourceId="1" SourceUrl="http://localhost:9003/instrumentationService/?disco" />
+    <MetadataFile FileName="item.xsd" MetadataType="Schema" ID="6f2459a1-7920-4619-8293-3c3bdbfceb6d" SourceId="1" SourceUrl="http://localhost:9003/instrumentationService/?xsd=xsd1" />
+    <MetadataFile FileName="item1.xsd" MetadataType="Schema" ID="f411b868-7ed5-4776-bb6c-d8fb7c35af9b" SourceId="1" SourceUrl="http://localhost:9003/instrumentationService/?xsd=xsd0" />
+    <MetadataFile FileName="item.wsdl" MetadataType="Wsdl" ID="f720d1e3-3064-4ded-b565-894cb77b0978" SourceId="1" SourceUrl="http://localhost:9003/instrumentationService/?wsdl=wsdl0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
