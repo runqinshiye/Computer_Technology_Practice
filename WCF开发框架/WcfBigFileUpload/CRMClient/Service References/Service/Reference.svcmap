@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="262a18a5-1b39-4bd0-9172-1e2bfd323b53" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8733/Design_Time_Addresses/CRMServer/FileService/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="44058fd7-ae52-4c37-93e2-5e11f3bbb1b4" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/CRMServer/FileService/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="310d2ee6-6fcd-4298-a35c-38b8e8bc679f" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/CRMServer/FileService/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="0eb04286-9363-40b6-84d6-3c6a632d5e6b" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/CRMServer/FileService/mex" />
+    <MetadataFile FileName="CRMServer.xsd" MetadataType="Schema" ID="ac467a44-36d2-4af6-a7bb-07e8c510a350" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/CRMServer/FileService/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

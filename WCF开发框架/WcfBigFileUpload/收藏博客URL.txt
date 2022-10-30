@@ -1,0 +1,45 @@
+上传
+https://www.cnblogs.com/zxtang/p/14827483.html
+
+下载：
+https://www.cnblogs.com/ives/p/WCFUploadDownLoadFile.html
+
+上传下载：
+https://wenku.baidu.com/view/d09b4556158884868762caaedd3383c4bb4cb4e3.html
+WCF教程--使用流Stream进行文件的上传下载
+https://blog.csdn.net/chaoyangzhixue/article/details/50536485
+
+流文件拷贝：
+
+  public class UploadFileService : IUploadFileService
+    {
+        public bool UploadFile(Stream file)
+        {
+            string uploadDirectory = System.AppDomain.CurrentDomain.BaseDirectory + @"\" + ConfigurationSettings.AppSettings["UploadedFiles"];
+            try
+            {
+                byte[] data = null;
+                if (file != null)
+                {
+                    using (MemoryStream ms = new MemoryStream())
+                    {
+                        file.CopyTo(ms);
+                        data = ms.ToArray();
+                    }
+                }
+
+                if (!Directory.Exists(uploadDirectory))
+                    Directory.CreateDirectory(uploadDirectory);
+                File.WriteAllBytes(uploadDirectory + @"\" + DateTime.Now.ToString("hhmmss") + ".jpg", data);
+                return true;
+            }
+            catch (Exception ex) 
+            {
+                StreamWriter sw = new StreamWriter(uploadDirectory + @"\Error.txt");
+                sw.WriteLine(ex.Message);
+                sw.Close();
+                sw.Dispose();
+                return false;
+            }
+        }
+    }
