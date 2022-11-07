@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCF.Demo.Service", "WCF.Demo.Service\WCF.Demo.Service.csproj", "{B2ECE7B8-977E-48B0-B7E8-1872E0996A0C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCF.Demo.Model", "WCF.Demo.Model\WCF.Demo.Model.csproj", "{0209C36C-2E3F-4A27-B425-D0C8A714BB6C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCF.Demo.DAL", "WCF.Demo.DAL\WCF.Demo.DAL.csproj", "{51F26015-5C2C-4386-953E-1C6022B2EC00}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B2ECE7B8-977E-48B0-B7E8-1872E0996A0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2ECE7B8-977E-48B0-B7E8-1872E0996A0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2ECE7B8-977E-48B0-B7E8-1872E0996A0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2ECE7B8-977E-48B0-B7E8-1872E0996A0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0209C36C-2E3F-4A27-B425-D0C8A714BB6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0209C36C-2E3F-4A27-B425-D0C8A714BB6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0209C36C-2E3F-4A27-B425-D0C8A714BB6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0209C36C-2E3F-4A27-B425-D0C8A714BB6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51F26015-5C2C-4386-953E-1C6022B2EC00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51F26015-5C2C-4386-953E-1C6022B2EC00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51F26015-5C2C-4386-953E-1C6022B2EC00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51F26015-5C2C-4386-953E-1C6022B2EC00}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

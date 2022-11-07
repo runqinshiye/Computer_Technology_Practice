@@ -1,0 +1,20 @@
+https://gitee.com/lishilei0523/WCF-Restful
+
+Restful形式WCF Demo
+一、作用
+
+1、了解Restful形式WCF的使用
+
+2、了解WCF多重绑定，Demo中使用了WsHttpBinding与WebHttpBinding双重绑定
+
+3、了解Restful形式WCF客户端的不同调用方式，即HTTP请求方式与ChannelFactory方式
+二、内容
+
+1、WCF服务端
+
+2、WCF客户端
+三、使用说明
+
+1、通过运行Restful.Client调用，即ChannelFactory方式调用Restful形式WCF
+
+2、通过运行Restful.Service的Index.html调用，即HTTP请求方式调用Restful形式WCF

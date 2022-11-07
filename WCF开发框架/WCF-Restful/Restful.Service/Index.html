@@ -1,0 +1,195 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>主页</title>
+    <script type="text/javascript" src="/Scripts/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript">
+        //创建学生
+        function createStudent() {
+            var name = "张三";
+            var addresses = ["黑龙江", "吉林", "辽宁"];
+
+            var data = { name: name, addresses: addresses };
+
+            $.ajax({
+                type: "POST",
+                url: "/Hosts/StudentContract.svc/Rest/CreateStudent",
+                dataType: "json",
+                data: JSON.stringify(data),
+                contentType: "application/json; charset=utf-8",
+                success: function (json) {
+                    alert(JSON.stringify(json));
+                },
+                error: function (error) {
+                    alert("调用出错" + error.responseText);
+                }
+            });
+        }
+
+        //修改学生
+        function updateStudent() {
+            var name = "张三";
+            var addresses = ["黑龙江", "吉林", "辽宁"];
+
+            var student = { Id: 0, Name: name, Addresses: addresses };
+
+            $.ajax({
+                type: "POST",
+                url: "/Hosts/StudentContract.svc/Rest/UpdateStudent",
+                dataType: "json",
+                data: JSON.stringify(student),
+                contentType: "application/json; charset=utf-8",
+                success: function (json) {
+                    alert(JSON.stringify(json));
+                },
+                error: function (error) {
+                    alert("调用出错" + error.responseText);
+                }
+            });
+        }
+
+        //批量修改学生
+        function updateStudents() {
+            var name = "张三";
+            var addresses = ["黑龙江", "吉林", "辽宁"];
+
+            var student1 = { Id: 0, Name: name, Addresses: addresses };
+            var student2 = { Id: 0, Name: name, Addresses: addresses };
+            var student3 = { Id: 0, Name: name, Addresses: addresses };
+            var student4 = { Id: 0, Name: name, Addresses: addresses };
+
+            var array = new Array();
+            array.push(student1);
+            array.push(student2);
+            array.push(student3);
+            array.push(student4);
+
+            $.ajax({
+                type: "POST",
+                url: "/Hosts/StudentContract.svc/Rest/UpdateStudents",
+                dataType: "json",
+                data: JSON.stringify(array),
+                contentType: "application/json; charset=utf-8",
+                success: function (json) {
+                    alert(JSON.stringify(json));
+                },
+                error: function (error) {
+                    alert("调用出错" + error.responseText);
+                }
+            });
+        }
+
+        //获取学生
+        function getStudent() {
+            $.ajax({
+                type: "POST",
+                url: "/Hosts/StudentContract.svc/Rest/GetStudent",
+                dataType: "json",
+                data: '{"id":"1"}',
+                contentType: "application/json; charset=utf-8",
+                success: function (json) {
+                    alert(JSON.stringify(json));
+                },
+                error: function (error) {
+                    alert("调用出错" + error.responseText);
+                }
+            });
+        }
+
+        //获取学生列表
+        function getStudents() {
+            $.ajax({
+                type: "POST",
+                url: "/Hosts/StudentContract.svc/Rest/GetStudents",
+                dataType: "json",
+                data: '{"keywords":"null"}',
+                contentType: "application/json; charset=utf-8",
+                success: function (json) {
+                    alert(JSON.stringify(json));
+                },
+                error: function (error) {
+                    alert("调用出错" + error.responseText);
+                }
+            });
+        }
+
+        //获取地址列表
+        function getAddresses() {
+            var addresses = ["黑龙江", "吉林", "辽宁"];
+            var data = { addresses: addresses };
+
+            $.ajax({
+                type: "POST",
+                url: "/Hosts/StudentContract.svc/Rest/GetAddresses",
+                dataType: "json",
+                data: JSON.stringify(data),
+                contentType: "application/json; charset=utf-8",
+                success: function (json) {
+                    alert(JSON.stringify(json));
+                },
+                error: function (error) {
+                    alert("调用出错" + error.responseText);
+                }
+            });
+        }
+
+        //获取异常
+        function getException() {
+            $.ajax({
+                type: "POST",
+                url: "/Hosts/StudentContract.svc/Rest/GetException",
+                dataType: "json",
+                data: '{"name":"null"}',
+                contentType: "application/json; charset=utf-8",
+                success: function (json) {
+                    alert(JSON.stringify(json));
+                },
+                error: function (error) {
+                    alert("调用出错" + error.responseText);
+                }
+            });
+        }
+
+        //获取字典
+        function getDictionary() {
+            var name = "张三";
+
+            var student1 = { Key: 0, Value: name };
+            var student2 = { Key: 1, Value: name };
+            var student3 = { Key: 2, Value: name };
+            var student4 = { Key: 3, Value: name };
+
+            var array = new Array();
+            array.push(student1);
+            array.push(student2);
+            array.push(student3);
+            array.push(student4);
+
+            $.ajax({
+                type: "POST",
+                url: "/Hosts/StudentContract.svc/Rest/GetDictionary",
+                dataType: "json",
+                data: JSON.stringify(array),
+                contentType: "application/json; charset=utf-8",
+                success: function (json) {
+                    alert(JSON.stringify(json));
+                },
+                error: function (error) {
+                    alert("调用出错" + error.responseText);
+                }
+            });
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="创建学生" onclick="createStudent();" /><hr />
+    <input type="button" value="修改学生" onclick="updateStudent();" /><hr />
+    <input type="button" value="批量修改学生" onclick="updateStudents();" /><hr />
+    <input type="button" value="获取学生" onclick="getStudent();" /><hr />
+    <input type="button" value="获取学生列表" onclick="getStudents();" /><hr />
+    <input type="button" value="获取地址列表" onclick="getAddresses();" /><hr />
+    <input type="button" value="获取异常" onclick="getException();" /><hr />
+    <input type="button" value="获取字典" onclick="getDictionary();" />
+</body>
+</html>

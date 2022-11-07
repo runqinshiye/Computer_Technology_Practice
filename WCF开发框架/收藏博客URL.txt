@@ -1,1 +1,14 @@
 https://www.cnblogs.com/zhili/p/WCFSummary.html
+
+https://www.cnblogs.com/dwuge/p/5315229.html
+
+
+wcf图文教程
+https://www.cnblogs.com/poissonnotes/archive/2010/08/28/1811064.html
+https://www.bbsmax.com/A/mo5k7YjL5w/
+https://www.cnblogs.com/iamlilinfeng/category/415833.html
+
+
+用java调用.net的wcf其实还是很简单的
+https://blog.csdn.net/chenzheng8975/article/details/78123698
+https://www.cnblogs.com/huangxincheng/p/7335312.html
